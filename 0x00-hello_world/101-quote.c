@@ -7,12 +7,11 @@
  *
  * Description: 'Prints a given word without use of printf or puts'
  *
- * Return: Always 1 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char *item = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(1, item, strlen(item));
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
