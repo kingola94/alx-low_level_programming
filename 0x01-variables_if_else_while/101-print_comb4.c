@@ -11,21 +11,25 @@
 
 int main(void)
 {
-	int i, j, k;
+	int i, j, k, o;
 
-	for (i = 0; i < 9; i++)
+	o = 48;
+	for (i = 0; i < 10; i++)
 	{
-		for (j = i + 1; j <= 9; j++)
+		for (j = i; j < 10; j++)
 		{
-			for (k = i + j + 1; k <= 9; k++)
+			for (k = j; k < 10; k++)
 			{
-				putchar('0' + i);
-				putchar('0' + j);
-				putchar('0' + k);
-				if (i != 8 || j != 9)
+				if ((j != k && i != j && i != k))
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(i + o);
+					putchar(j + o);
+					putchar(k + o);
+					if (!((i > 6) && (j != 7) && (k > 8)))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
