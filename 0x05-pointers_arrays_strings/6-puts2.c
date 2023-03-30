@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * puts2 - check code
  * @str: print half
@@ -12,4 +13,5 @@ void puts2(char *str)
 	{
 		printf("%c", str[i]);
 	}
+	printf('\n)
 }
